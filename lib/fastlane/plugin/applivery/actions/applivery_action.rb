@@ -41,7 +41,7 @@ module Fastlane
                 commit: Helper::AppliveryHelper.git_commit,
                 commitMessage: Helper::AppliveryHelper.git_message,
                 repositoryUrl: Helper::AppliveryHelper.add_git_remote,
-                tag: Helper::AppliveryHelper.git_tag,
+                tag: "", #Helper::AppliveryHelper.git_tag,
                 triggerTimestamp: Time.now.getutc.to_i
               } 
             }
